@@ -1,8 +1,8 @@
 /* Main Color */
 
-$dz-primary: #EDFF00;
-$dz-secondary: #D8DFD8;
-$dz-tertiary: #EBF2EB;
+$vf-primary: #D8DFD8;
+$vf-secondary: #D8DFD8;
+$vf-tertiary: #EBF2EB;
 
 /* Neutral Colors */
 
@@ -12,3 +12,14 @@ $grey-700: #B1B1B1;
 $grey-800: #646464;
 $grey-900: #181818;
 $grey-1000: #000;
+
+.color-primary {
+    color: $vf-primary;
+  }
+  .color-white {
+    color: $grey-0;
+  }
+  .color-black{
+    
+    color: $grey-900;
+  }

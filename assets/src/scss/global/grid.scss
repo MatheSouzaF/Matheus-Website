@@ -1,15 +1,16 @@
 @use "sass:math";
-@import './breakpoints.scss';
+@import "./breakpoints.scss";
 
 $grid-columns: 12;
 $grid-sm-columns: 6;
 
 .wrapper {
-   width: 100%;
+  width: 100%;
   box-sizing: border-box;
   padding: 0 16px;
   gap: 16px;
-
+  max-width: 1440px;
+  margin: 0 auto;
   @include media-breakpoint-up(md) {
     padding: 0 40px;
     gap: 32px;
@@ -47,21 +48,15 @@ $grid-sm-columns: 6;
     @include media-breakpoint-up(sm) {
       @include col-general($grid-columns);
     }
-  }
-
-  @else if $breakpoint ==md {
+  } @else if $breakpoint ==md {
     @include media-breakpoint-up(md) {
       @include col-general($grid-columns);
     }
-  }
-
-  @else if $breakpoint ==lg {
+  } @else if $breakpoint ==lg {
     @include media-breakpoint-up(lg) {
       @include col-general($grid-columns);
     }
-  }
-
-  @else if $breakpoint ==xl {
+  } @else if $breakpoint ==xl {
     @include media-breakpoint-up(xl) {
       @include col-general($grid-columns);
     }

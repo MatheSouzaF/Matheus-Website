@@ -88,6 +88,16 @@ gulp.task('default', gulp.parallel(
 	// 'browser:sync',
 )
 );
+gulp.task('start', gulp.parallel(
+	'fonts:watch',
+	'svg:watch',
+	'sprite:watch',
+	'images:watch',
+	'scripts:watch',
+	'styles:watch',
+	// 'browser:sync',
+)
+);
 
 gulp.task('build', gulp.parallel(
 	'fonts:prod',

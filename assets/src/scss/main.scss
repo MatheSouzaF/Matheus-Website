@@ -9,9 +9,13 @@
 @import "global/spacings.scss";
 @import "global/colors.scss";
 @import "global/banner-base.scss";
-@import "global/botao.scss";
+@import "global/hover.scss";
+@import "layout/header";
+@import "layout/footer";
+@import "layout/cursor";
 
 
 @import "base/base";
 
-@import "./pages/homepage";
+@import "pages/homepage";
+@import "pages/single-ensaio";

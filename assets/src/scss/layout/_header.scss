@@ -1,4 +1,16 @@
 
-.site-header {
-
+.header-main {
+  justify-content: space-between;
+  .logo-header {
+    font-size: 46px;
+    color: $vf-primary;
+  }
+  .about-main {
+    gap: 1.25rem;
+    .hover-text{
+      text-transform: uppercase;
+    }
+    
+  }
+ 
 }
